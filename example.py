@@ -1,10 +1,10 @@
 import numpy as np
-import scipy.ndimage
+import imageio
 import matplotlib.pyplot as plt
 from phase_retrieval import fienup_phase_retrieval
 
 np.random.seed(1)
-image = scipy.ndimage.imread('test.png', flatten=True)
+image = imageio.imread('test.png', as_gray=True)
 magnitudes = np.abs(np.fft.fft2(image))
 result = fienup_phase_retrieval(magnitudes, steps=500,
                                 verbose=False)
