@@ -15,8 +15,10 @@ result = fienup_phase_retrieval(magnitudes, steps=500, verbose=False)
 ```
 
 ## Requirements
-- Python (>= 3.6.5)
-- NumPy (>= 1.15.4)
+- Python (>= 3.7.3)
+- NumPy (>= 1.17.2)
+- matplotlib (tested with 3.1.1) 
+- imageio (tested with 2.6.0)
 
 ## References
 [1] E. Osherovich, Numerical methods for phase retrieval, arXiv:1203.4756, 2012
