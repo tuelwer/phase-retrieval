@@ -9,7 +9,7 @@ Python implementation of Fienup's phase retrieval algorithms, which allow recons
 ## Example
 
 ```python
-image = scipy.ndimage.imread('test.png', flatten=True)
+image = imageio.imread('test.png', as_gray=True)
 magnitudes = np.abs(np.fft.fft2(image))
 result = fienup_phase_retrieval(magnitudes, steps=500, verbose=False)
 ```
